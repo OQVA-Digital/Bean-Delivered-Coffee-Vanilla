@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9E6SRQQKB1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9E6SRQQKB1');
+    </script>
+    
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage your orders | Bean Delivered Coffee</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="./load.js" defer></script>
+</head>
+<body class="order_manager_body">
+    <div id="loading_bg"></div>
+
+    <header>
+        <a class="return_bt" href="./index.html">Return home</a>
+
+        <span class="user_email">your.own@email.com</span>
+    </header>
+
+    <div class="form_ctnr">
+        <form class="login_form">
+    
+            <picture class="sticker" draggable="false">
+                <source srcset="assets/sticker-dark.webp" type="image/webp">
+                <source srcset="assets/sticker-dark.png" type="image/png"> 
+                <img src="assets/sticker-dark.png" alt="BD Coffee sticker art">
+            </picture>
+    
+            <input type="email" placeholder="Your e-mail">
+            <div role="button">Send verification code</div>
+        </form>
+    </div>
+
+    <main>
+
+        <h1>Your Orders</h1>
+
+        <div class="orders_ctnr">
+            <section>
+                <div class="info_row order_info">
+                    <span class="order_ID">Subscription #8SM3MC</span>
+                    <div class="divider"></div>
+                    <span class="order_date">11/11/2022</span>
+                </div>
+    
+                <div class="delivery_details">
+                    <div class="status active">
+                        <span>Status:</span> <b>active</b>
+                    </div>
+                    <div class="detail_ctnr">
+                        <span>Address:</span>
+                        <div class="inputs_ctnr">
+                            <input disabled value="Main Road Heath" type="text"/>
+                            <input disabled value="NXN9O2D-4" type="text"/>
+                            <input disabled value="(empty) Location reference" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="detail_ctnr">
+                        <span>Card:</span>
+                        <div class="inputs_ctnr">
+                            <input disabled value="5392 **** **** ****" type="text"/>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="items_ctnr">
+                    <div class="subscription_summary">
+                        <div class="item">
+                            <span class="title">Coffee (2x) + pastry (1x)</span>
+                            <div class="divider"></div>
+                            <span class="quantity">£33.75</span>
+                        </div>
+                        <div class="dowPicker">
+                            <div class="dowPickerOption">
+                                <input checked type="checkbox" disabled id="dow1">
+                                <label for="dow1">MON</label>
+                            </div>
+    
+                            <div class="dowPickerOption">
+                                <input checked type="checkbox" disabled id="dow2">
+                                <label for="dow2">TUE</label>
+                            </div>
+    
+                            <div class="dowPickerOption">
+                                <input type="checkbox" disabled id="dow3">
+                                <label for="dow3">WED</label>
+                            </div>
+    
+                            <div class="dowPickerOption">
+                                <input checked type="checkbox" disabled id="dow4">
+                                <label for="dow4">THU</label>
+                            </div>
+                            
+                            <div class="dowPickerOption">
+                                <input type="checkbox" disabled id="dow5">
+                                <label for="dow5">FRI</label>
+                            </div>
+    
+                            <div class="dowPickerOption">
+                                <input type="checkbox" disabled id="dow6">
+                                <label for="dow6">SAT</label>
+                            </div>
+    
+                            <div class="dowPickerOption">
+                                <input type="checkbox" disabled id="dow7">
+                                <label for="dow7">SUN</label>
+                            </div>
+                        </div>
+                        
+                        <div class="range_ctnr">
+                            <div class="item">
+                                <span>Receiving at...</span>
+                                <div class="divider"></div>
+                                <div>10:30</div>
+                            </div>
+        
+                            <div class="range_selector">
+                                <input disabled type='range' min='9' max='19' value='11' step='1' class='val' id='r1'/>
+                            </div>
+                        </div>
+    
+                        <span class="weekly_price">
+                            <span class="cumulative_discount">£5.50 OFF</span>
+                            £33.75
+                            <span>/week*</span>
+                        </span>
+    
+                        <div class="week_selections">
+
+                            <div class="week">
+                                <span>Last week (1st Nov)</span>
+                                <div class="selects">
+                                    <select name="week1-coffee1">
+                                        <option value="" disabled>Coffees</option>
+                                        <option value="espresso" disabled selected>Espresso</option>
+                                        <option value="americano" disabled >Americano</option>
+                                        <option value="machiatto" disabled >Machiatto</option>
+                                        <option value="cappuccino" disabled >Cappuccino</option>
+                                        <option value="latte" disabled>Latte</option>
+                                        <option value="flat-white" disabled >Flat White</option>
+                                        <option value="mocha" disabled >Mocha</option>
+                                    </select>
+
+                                    <select name="week1-coffee2">
+                                        <option value="" disabled>Coffees</option>
+                                        <option value="espresso" disabled >Espresso</option>
+                                        <option value="americano" disabled >Americano</option>
+                                        <option value="machiatto" disabled selected >Machiatto</option>
+                                        <option value="cappuccino" disabled >Cappuccino</option>
+                                        <option value="latte" disabled>Latte</option>
+                                        <option value="flat-white" disabled >Flat White</option>
+                                        <option value="mocha" disabled >Mocha</option>
+                                    </select>
+
+                                    <select name="week1-pastry1">
+                                        <option value="" disabled>Pastries</option>
+                                        <option value="croissant" disabled selected>Croissant</option>
+                                        <option value="pain-of-chocolate" disabled >Pain of Chocolate</option>
+                                        <option value="pain-of-raisin" disabled >Pain of Raisin</option>
+                                        <option value="almond-croissant" disabled >Almond Croissants</option>
+                                        <option value="cinnamon-buns" disabled>Cinnamon Buns</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="week current">
+                                <span>Next week (2nd Nov)</span>
+                                <div class="selects">
+                                    <select name="week1-coffee1">
+                                        <option value="" disabled>Coffees</option>
+                                        <option value="espresso" disabled selected>Espresso</option>
+                                        <option value="americano" disabled >Americano</option>
+                                        <option value="machiatto" disabled >Machiatto</option>
+                                        <option value="cappuccino" disabled >Cappuccino</option>
+                                        <option value="latte" disabled>Latte</option>
+                                        <option value="flat-white" disabled >Flat White</option>
+                                        <option value="mocha" disabled >Mocha</option>
+                                    </select>
+
+                                    <select name="week1-coffee2">
+                                        <option value="" disabled>Coffees</option>
+                                        <option value="espresso" disabled >Espresso</option>
+                                        <option value="americano" disabled >Americano</option>
+                                        <option value="machiatto" disabled selected >Machiatto</option>
+                                        <option value="cappuccino" disabled >Cappuccino</option>
+                                        <option value="latte" disabled>Latte</option>
+                                        <option value="flat-white" disabled >Flat White</option>
+                                        <option value="mocha" disabled >Mocha</option>
+                                    </select>
+
+                                    <select name="week1-pastry1">
+                                        <option value="" disabled>Pastries</option>
+                                        <option value="croissant" disabled selected>Croissant</option>
+                                        <option value="pain-of-chocolate" disabled >Pain of Chocolate</option>
+                                        <option value="pain-of-raisin" disabled >Pain of Raisin</option>
+                                        <option value="almond-croissant" disabled >Almond Croissants</option>
+                                        <option value="cinnamon-buns" disabled>Cinnamon Buns</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <span>Week 3 (3rd Nov)</span>
+                                <div class="selects">
+                                    <select name="week1-coffee1">
+                                        <option value="" disabled>Coffees</option>
+                                        <option value="espresso" disabled selected>Espresso</option>
+                                        <option value="americano" disabled >Americano</option>
+                                        <option value="machiatto" disabled >Machiatto</option>
+                                        <option value="cappuccino" disabled >Cappuccino</option>
+                                        <option value="latte" disabled>Latte</option>
+                                        <option value="flat-white" disabled >Flat White</option>
+                                        <option value="mocha" disabled >Mocha</option>
+                                    </select>
+
+                                    <select name="week1-coffee2">
+                                        <option value="" disabled>Coffees</option>
+                                        <option value="espresso" disabled >Espresso</option>
+                                        <option value="americano" disabled >Americano</option>
+                                        <option value="machiatto" disabled selected >Machiatto</option>
+                                        <option value="cappuccino" disabled >Cappuccino</option>
+                                        <option value="latte" disabled>Latte</option>
+                                        <option value="flat-white" disabled >Flat White</option>
+                                        <option value="mocha" disabled >Mocha</option>
+                                    </select>
+
+                                    <select name="week1-pastry1">
+                                        <option value="" disabled>Pastries</option>
+                                        <option value="croissant" disabled selected>Croissant</option>
+                                        <option value="pain-of-chocolate" disabled >Pain of Chocolate</option>
+                                        <option value="pain-of-raisin" disabled >Pain of Raisin</option>
+                                        <option value="almond-croissant" disabled >Almond Croissants</option>
+                                        <option value="cinnamon-buns" disabled>Cinnamon Buns</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="week">
+                                <span>Week 4 (4th Nov)</span>
+                                <div class="selects">
+                                    <select name="week4-coffee1">
+                                        <option value="" disabled>Coffees</option>
+                                        <option value="espresso" disabled selected>Espresso</option>
+                                        <option value="americano" disabled >Americano</option>
+                                        <option value="machiatto" disabled >Machiatto</option>
+                                        <option value="cappuccino" disabled >Cappuccino</option>
+                                        <option value="latte" disabled>Latte</option>
+                                        <option value="flat-white" disabled >Flat White</option>
+                                        <option value="mocha" disabled >Mocha</option>
+                                    </select>
+
+                                    <select name="week4-coffee2">
+                                        <option value="" disabled>Coffees</option>
+                                        <option value="espresso" disabled >Espresso</option>
+                                        <option value="americano" disabled >Americano</option>
+                                        <option value="machiatto" disabled selected >Machiatto</option>
+                                        <option value="cappuccino" disabled >Cappuccino</option>
+                                        <option value="latte" disabled>Latte</option>
+                                        <option value="flat-white" disabled >Flat White</option>
+                                        <option value="mocha" disabled >Mocha</option>
+                                    </select>
+
+                                    <select name="week4-pastry1">
+                                        <option value="" disabled>Pastries</option>
+                                        <option value="croissant" disabled selected>Croissant</option>
+                                        <option value="pain-of-chocolate" disabled >Pain of Chocolate</option>
+                                        <option value="pain-of-raisin" disabled >Pain of Raisin</option>
+                                        <option value="almond-croissant" disabled >Almond Croissants</option>
+                                        <option value="cinnamon-buns" disabled>Cinnamon Buns</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- <div class="open_bt" role="button">See more</div> -->
+                        </div>
+
+                        <textarea class="order_notes" name="" id="" cols="30" rows="10" placeholder="(empty) Notes and preferences" disabled></textarea>
+    
+                        <div class="edit_subscription_bts">
+                            <button class="update">Edit subscription</button>
+                            <button class="cancel">Turn subscription off</button>
+                        </div>
+    
+                        <span class="asterisk_txt">*Billed every monday</span>
+                    </div>
+                </div>
+
+                <div class="open_bt" role="button">See more</div>
+            </section>
+    
+            <div class="divider"></div>
+    
+            <section class="order_ctnr delivered">
+                <div class="info_row order_info">
+                    <span class="order_ID">Order #3A8D07</span>
+                    <div class="divider"></div>
+                    <span class="order_date">13/09/2022</span>
+                </div>
+                
+    
+                <div class="delivery_details">
+                    <div class="status delivered">
+                        <span>Status:</span> <b>delivered</b>
+                    </div>
+                    <div class="detail_ctnr">
+                        <span>Address:</span>
+                        <div class="inputs_ctnr">
+                            <input disabled value="Main Road Heath" type="text"/>
+                            <input disabled value="NXN9O2D-4" type="text"/>
+                            <input disabled value="(empty) Location reference" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="detail_ctnr">
+                        <span>Card:</span>
+                        <div class="inputs_ctnr">
+                            <input disabled value="5392 **** **** ****" type="text"/>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="items_ctnr">
+                    <div class="singles_summary">
+                        <div class="item">
+                            <span class="title">Machiatto 1x</span>
+                            <div class="divider"></div>
+                            <span class="quantity">£3.50</span>
+                        </div>
+                        <div class="item">
+                            <span>Pain of Raisin 1x</span>
+                            <div class="divider"></div>
+                            <span class="quantity">£4.50</span>
+                        </div>
+                        <div class="item">
+                            <span>Croissant 1x</span>
+                            <div class="divider"></div>
+                            <span class="quantity">£4.50</span>
+                        </div>
+                        <div class="item total">
+                            <span>Total</span>
+                            <div class="divider"></div>
+                            <span class="quantity">£12.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="open_bt" role="button">See more</div>
+            </section>
+    
+            <div class="divider"></div>
+    
+            <section class="order_ctnr canceled">
+                <div class="info_row order_info">
+                    <span class="order_ID">Order #9SM3N</span>
+                    <div class="divider"></div>
+                    <span class="order_date">07/09/2022</span>
+                </div>
+    
+    
+                <div class="delivery_details">
+                    <div class="status canceled">
+                        <span>Status:</span> <b>canceled</b>
+                    </div>
+                    <div class="detail_ctnr">
+                        <span>Address:</span>
+                        <div class="inputs_ctnr">
+                            <input disabled value="Main Road Heath" type="text"/>
+                            <input disabled value="NXN9O2D-4" type="text"/>
+                            <input disabled value="(empty) Location reference" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="detail_ctnr">
+                        <span>Card:</span>
+                        <div class="inputs_ctnr">
+                            <input disabled value="5392 **** **** ****" type="text"/>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="items_ctnr">
+                    <div class="singles_summary">
+                        <div class="item">
+                            <span class="title">Cappuccino 1x</span>
+                            <div class="divider"></div>
+                            <span class="quantity">£3.50</span>
+                        </div>
+                        <div class="item">
+                            <span>Pain of Chocolate 1x</span>
+                            <div class="divider"></div>
+                            <span class="quantity">£4.50</span>
+                        </div>
+                        <div class="item">
+                            <span>Croissant 1x</span>
+                            <div class="divider"></div>
+                            <span class="quantity">£4.50</span>
+                        </div>
+                        <div class="item total">
+                            <span>Total</span>
+                            <div class="divider"></div>
+                            <span class="quantity">£12.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="open_bt" role="button">See more</div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        document.querySelector('.login_form div[role=button]').addEventListener('click', function() {
+            document.querySelector('.form_ctnr').style.display = 'none';
+        })
+    
+        const openBts = document.querySelectorAll('.open_bt')
+    
+        for(i=0;i<openBts.length;i++) {
+            openBts[i].addEventListener('click', function() {
+                this.parentElement.style.maxHeight = this.parentElement.scrollHeight + 'px'
+                
+                this.style.display = 'none'
+    
+                setTimeout(() => {
+                    this.parentElement.style.transition = 'none'
+                }, 600);
+    
+                this.parentElement.closest('.orders_ctnr section').style.maxHeight = this.closest('.orders_ctnr section').scrollHeight + 'px'
+    
+            })
+        }
+    </script>
+</body>
+</html>

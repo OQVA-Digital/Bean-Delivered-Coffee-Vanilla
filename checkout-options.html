@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9E6SRQQKB1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9E6SRQQKB1');
+    </script>
+    
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans | Bean Delivered</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="./load.js" defer></script>
+</head>
+<body class="subscription_redirect_body">
+    <div id="loading_bg"></div>
+
+    <a href="./index.html" class="brand_header">
+        <picture class="sticker" loading="lazy" draggable="false" id="catalog">
+            <source srcset="assets/sticker-dark.webp" type="image/webp">
+            <source srcset="assets/sticker-dark.png" type="image/png"> 
+            <img src="assets/sticker-dark.png" alt="Bean Delivered logo">
+        </picture>
+        <h2 class="title">Bean<br>Delivered</h2>
+    </a>
+
+    <main>
+        <a class="choice add_another_subscription" href="./subscribe.html" target="_blank">
+            <img src="assets/icon-cycle.svg" class="icon" alt="icon"/>
+            <span class="title">Add another subscription</span>
+        </a>
+
+        <div class="choice payment">
+            <h1 class="title">Pay & Checkout</h1>
+            <div class="ctnr">
+                <a href="https://buy.stripe.com/6oE9AU7av6GcgdW28a" target="_blank">
+                    <span>Coffee + Pastry <b>3x /week</b></span>
+                    <div class="divider"></div>
+                    <span>£22</span>
+                </a>
+                <a href="https://buy.stripe.com/14k8wQfH10hO7HqeUX" target="_blank">
+                    <span>Coffee + Pastry <b>5x /week</b></span>
+                    <div class="divider"></div>
+                    <span>£33</span>
+                </a>
+                <!-- <a href="https://buy.stripe.com/cN26oI3Yj6Gc0eY3cg">
+                    <span>Coffee + Pastry <b>7x /week</b></span>
+                    <div class="divider"></div>
+                    <span>£44</span>
+                </a> -->
+                <a class="soon">
+                    <span>Coffee + Pastry 7x /week</span>
+                    <div class="divider"></div>
+                    <span>soon!</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- <p class="submitted_message">
+        Your subscription was succesfully sent!<br>Select one of the deals to proceed to checkout on Stripe.
+    </p> -->
+
+    <div class="url_param_message submitted_message">
+        <p class="title">Your subscription was successfully sent!</p>
+
+        <p>Select one of the deals to proceed to checkout on Stripe.</p>
+
+        <p><sub>If you have already paid for the subscription, you can ignore this message.</sub></p>
+
+        <div role="button">dismiss</div>
+    </div>
+
+    <script>
+        let UrlParameters = new URLSearchParams(document.location.search);
+        let isSubmitted = UrlParameters.get('submitted')
+
+        const urlParamMessage = document.querySelector('.submitted_message')
+        const dismiss = document.querySelector('.url_param_message div[role="button"]')
+    
+        if(isSubmitted == 'true') {
+            urlParamMessage.style.display = 'flex'
+        }
+
+        dismiss.addEventListener('click', function() {
+            urlParamMessage.style.display = 'none'
+        })
+    </script>
+</body>
+</html>

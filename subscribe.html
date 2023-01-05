@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9E6SRQQKB1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9E6SRQQKB1');
+    </script>
+    
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Your Subscription | Bean Delivered</title>
+    <link rel="stylesheet" href="./main.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="form_page_body subscription">
+
+    <main>
+        <a href="./index.html" class="brand_header">
+            <picture class="sticker" loading="lazy" draggable="false" id="catalog">
+                <source srcset="assets/sticker-dark.webp" type="image/webp">
+                <source srcset="assets/sticker-dark.png" type="image/png"> 
+                <img src="assets/sticker-dark.png" alt="Bean Delivered logo">
+            </picture>
+            <h2 class="title">Bean<br>Delivered</h2>
+        </a>
+    
+        <div class="intro">
+            <h1>Relax, it's <span>Bean Delivered.</span></h1>
+            <p>Barista made coffee and fresh pastries delivered to you, on your schedule.</p>
+        </div>
+    
+        <div class="divider"></div>
+
+        <div class="form_ctnr">
+
+            <iframe id="form" style="border:none;width:100%;" height="1030px" src="https://notionforms.io/forms/relax-its-bean-delivered"></iframe>
+        </div>
+
+        <!-- <div>
+            <p>Once you submit the</p>
+
+            <a href="">Select your subscription</a>
+
+        </div> -->
+    </main>
+
+    <div class="url_param_message paid_message">
+        <p class="title">Thank you!<br>Your subscription is confirmed.</p>
+
+        <p>Please fill the form with the remaining subscription details.</p>
+
+        <p><sub>If you have submitted this form previously, you can ignore this message.</sub></p>
+
+        <div role="button">dismiss</div>
+    </div>
+
+    <script>
+        let UrlParameters = new URLSearchParams(document.location.search);
+        let isPaid = UrlParameters.get('paid')
+
+        const urlParamMessage = document.querySelector('.url_param_message')
+        const dismiss = document.querySelector('.url_param_message div[role="button"]')
+    
+        if(isPaid == 'true') {
+            urlParamMessage.style.display = 'flex'
+        }
+
+        dismiss.addEventListener('click', function() {
+            urlParamMessage.style.display = 'none'
+        })
+    </script>
+
+</body>
+</html>
